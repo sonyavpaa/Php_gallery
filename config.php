@@ -1,7 +1,9 @@
 <?php
-
+$db = null;
+$dbuser = null;
+$dbpassword = null;
 // creating the db server connection
-$dbserver =  new mysqli("db", "root", "lionPass");
+$dbserver =  new mysqli($db, $dbuser, $dbpassword);
 
 // naming and creating the database for photos
 $photodb = 'photoapp';
