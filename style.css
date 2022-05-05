@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.containerFrame {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 3px solid green;
+}
+
+/* LEFT FRAME */
+
+.leftFrame {
+  width: 30%;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form div {
+  margin: 1em;
+}
+
+input[type="file"]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: #a29bfe;
+  transition: 1s;
+  font-family: "Courier New", Courier, monospace;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 0.3em;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  outline: none;
+}
+
+form .button {
+  padding: 0.2em;
+}
+
+/* RIGHT FRAME */
+
+.rightFrame {
+  width: 80%;
+}
+
+.galleryFrame {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 3px solid red;
+  justify-content: center;
+}
+
+.photo {
+  margin: 1em;
+  padding: 1em;
+  width: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.rightFrame textarea {
+  margin: 1em 0 1em 0;
+  height: 8em;
+}
+
+.rightFrame .id {
+  visibility: hidden;
+}
+
+.photo a {
+  align-self: end;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
