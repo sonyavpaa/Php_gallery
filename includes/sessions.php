@@ -2,9 +2,6 @@
 session_start();                                         // Start/renew session
 $logged_in = $_SESSION['logged_in'] ?? false;            // Is user logged in?
 
-$email     = 'james';                              // Email address to login
-$password  = 'bond';                                 // Password to login
-
 function login()                                         // Remember user passed login
 {
     session_regenerate_id(true);                       // Update session id

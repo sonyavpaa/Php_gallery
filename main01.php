@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +17,9 @@ if ( window.history.replaceState ) {
 
 
 
-<h1>Photo Gallery</h1>
 <div class="containerFrame">
+  <div class="h1Frame">
+  <h1>Photo Gallery</h1>
+  </div>
 <div class="leftFrame">
-<div class="formframe"> 
+<div class="formFrame"> 

@@ -25,6 +25,7 @@ if (isset($_POST['upload'])) {
     $insertQuery=mysqli_query($connphoto, $insert);
     } 
 ?>
+    
     <a href="logout.php">Log Out</a>
     <form action="home.php" method="post" enctype="multipart/form-data">
         <div>
@@ -38,6 +39,7 @@ if (isset($_POST['upload'])) {
             <input class="button" type="submit" name="upload" value="send it!">
         </div>
     </form>
+
 
 
 

@@ -14,7 +14,7 @@ if($data) {
         <div class="photo"> <?php if($logged_in) { ?>
             <a href="delete.php?id=<?php echo $row['id']?>">x</a><?php } ?>
             <img src="images/<?php echo $row['filename']?>" style="width:10em;height:10em;object-fit:contain">
-            <div>
+            <div class="editFrame">
                 <?php if($logged_in) { ?>
                 <form action="home.php" method="post">
                 <textarea name='text' ><?php echo $row['text'] ?></textarea>
@@ -32,7 +32,7 @@ if($data) {
 
 } else {
 
-echo "no photos!";
+echo "<p class='nophotos'>no photos!</p>";
 }
 ?>
 
